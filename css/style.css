@@ -1,0 +1,46 @@
+body { background-color: #000;}
+
+/* [Content Wrapper] ::start */
+.content-wrapper { 
+    margin: 50px auto;
+    padding: 10px;
+    width: 75%;
+    border: solid 10px #0066FF;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/* [Content Wrapper] ::end */
+
+/*------------------------------------------------------------------
+ # [Main Content] ::start
+-------------------------------------------------------------------*/
+.main-content {
+    margin: 20px;
+    width: 90;
+    height: 700px;
+}
+
+
+/* [Header Styling] ::start */
+.hd-1 { 
+    color: #00CCFF;
+    text-align: center;
+    text-shadow: 2px 2px #fff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* [Header Styling] ::end */
+
+/* [Image PlaceHOlder] ::start */
+.image-placeholder {
+    height: 600px;
+    border: 10px solid #7AC143;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+/* [Image PlaceHOlder] ::end */
+
+/*------------------------------------------------------------------
+ # [Main Content] ::end
+-------------------------------------------------------------------*/
