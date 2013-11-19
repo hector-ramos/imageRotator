@@ -18,7 +18,7 @@ body { background-color: #000;}
 .main-content {
     margin: 20px;
     width: 90;
-    height: 700px;
+    height: 600px;
 }
 
 
@@ -33,7 +33,7 @@ body { background-color: #000;}
 
 /* [Image PlaceHOlder] ::start */
 .image-placeholder {
-    height: 600px;
+    height: 500px;
     border: 10px solid #7AC143;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
