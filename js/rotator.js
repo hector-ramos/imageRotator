@@ -1,4 +1,3 @@
-// /* */
 // var loginName = prompt("Who are you?");
 
 
@@ -13,13 +12,45 @@
 //     }
 // }
 
-var images = [
-                'images/front-view-large.jpg',
-                'images/left-view-large.jpg',
-                'images/rear-view-large.jpg',
-                'images/right-view-large.jpg'
-            ];
+// var images = [
+//     'images/front-view-large.jpg',
+//     'images/left-view-large.jpg',
+//     'images/rear-view-large.jpg',
+//     'images/right-view-large.jpg'
+// ];
 
-for (var images = 0; images <= 4; images++) {
-    console.log(images[2])
-};
+// var elementStr = '';
+
+// var tmpImg = new Image();
+
+// for (var i = 0; i < images.length; i++) {
+//     tmpImg.src = images[i];
+
+//     elementStr += tmpImg.outerHTML;
+// }
+
+// document.getElementById("image-placeholder").innerHTML = elementStr;
+
+var items = new Array();
+    items[0]="<img src='images/front-view-large.jpg' height='300' width='300' border='0' />";
+    items[1]="<img src='images/left-view-large.jpg' height='300' width='300' border='0' />"; 
+    items[2]="<img src='images/rear-view-large.jpg' height='300' width='300' border='0' />"; 
+    items[3]="<img src='images/right-view-large.jpg' height='300' width='300' border='0' />";
+// var items = [
+//     'images/front-view-large.jpg',
+//     'images/left-view-large.jpg',
+//     'images/rear-view-large.jpg',
+//     'images/right-view-large.jpg'
+// ];
+
+// var howOften = 5;
+var current = 0;
+var image = document.getElementById;
+
+function rotathor() {
+    if(image)document.getElementById("place-holder").innerHTML = items[current]
+    current = (current === items.length-1) ? 0 : current + 1;
+    // setTimeout("rotathor()",howOften*1000);
+}
+
+window.onclick = rotathor;
