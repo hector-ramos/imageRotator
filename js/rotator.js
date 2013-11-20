@@ -32,10 +32,11 @@
 // document.getElementById("image-placeholder").innerHTML = elementStr;
 
 var items = new Array();
-    items[0]="<img src='images/front-view-large.jpg' height='300' width='300' border='0' />";
-    items[1]="<img src='images/left-view-large.jpg' height='300' width='300' border='0' />"; 
-    items[2]="<img src='images/rear-view-large.jpg' height='300' width='300' border='0' />"; 
-    items[3]="<img src='images/right-view-large.jpg' height='300' width='300' border='0' />";
+    items[0]="<img src='images/front-view-large.jpg' height='300' width='300'/>";
+    items[1]="<img src='images/left-view-large.jpg' height='300' width='300'/>"; 
+    items[2]="<img src='images/rear-view-large.jpg' height='300' width='300'/>"; 
+    items[3]="<img src='images/right-view-large.jpg' height='300' width='300'/>";
+
 // var items = [
 //     'images/front-view-large.jpg',
 //     'images/left-view-large.jpg',
@@ -45,7 +46,11 @@ var items = new Array();
 
 // var howOften = 5;
 var current = 0;
-var image = document.getElementById;
+var image = document.getElementById("place-holder");
+
+function rotathorOnload() {
+    if(image)document.getElementById("place-holder").innerHTML = items[current]
+}
 
 function rotathor() {
     if(image)document.getElementById("place-holder").innerHTML = items[current]
@@ -53,4 +58,5 @@ function rotathor() {
     // setTimeout("rotathor()",howOften*1000);
 }
 
+window.onload = rotathorOnload;
 window.onclick = rotathor;
